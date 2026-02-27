@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-
+import { housingLocationInfo } from '../housinglocationinfo';
 @Component({
   selector: 'app-housing-location',
   imports: [],
@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './housing-location.css',
 })
 export class HousingLocation {
-housingLocation = input.required
+housingLocation = input.required<housingLocationInfo>();
 }
